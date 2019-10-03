@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { MDBContainer, MDBRow, MDBCol} from 'mdbreact';
+import FormikExample from './FormikExample';
 
 export class App extends Component {
   constructor(props) {
@@ -11,15 +12,14 @@ export class App extends Component {
   this.textInput =React.createRef();
   };
   
-  // componentDidMount =()  =>{
-  //   // console.log(this.textInput);
-  //   this.textInput.current.focus();
-  // }
+  componentDidMount =()  =>{
+    // console.log(this.textInput);
+    this.textInput.current.focus();
+  }
   handleSubmit = e =>
   {
-    debugger;
+   
     e.preventDefault();
-    console.log(this.textInput.current.value);
     this.setState({value:this.textInput.current.value})
 
   };
@@ -81,7 +81,7 @@ export class App extends Component {
               type="password"
               id="defaultFormRegisterPasswordEx"
               className="form-control"
-              
+              ref = {this.textInput}
             />
             <div className="text-center mt-4">
               <input type = "submit" value="submit" />
@@ -90,6 +90,8 @@ export class App extends Component {
         </MDBCol>
       </MDBRow>
     </MDBContainer>
+
+   <FormikExample/>
       </div>
      
     )
