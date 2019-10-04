@@ -8,7 +8,10 @@ import {Mycontext} from '../App';
         <h3>**Guest Component**</h3>
         {/* <h5>{this.props.nm}</h5> */}
         <Mycontext.Consumer>
-          {data=><h5>{data}</h5>}
+          {
+            name =>
+            <h1>{name}</h1>
+          }
         </Mycontext.Consumer>
       </div>
     )

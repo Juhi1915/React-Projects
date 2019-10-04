@@ -4,7 +4,7 @@ import Guest from './Guest';
   render() {
     return (
       <div>
-        <h2>:-User Component:- </h2>
+        <h5>:-User Component:- </h5>
         <Guest/>
       </div>
     )

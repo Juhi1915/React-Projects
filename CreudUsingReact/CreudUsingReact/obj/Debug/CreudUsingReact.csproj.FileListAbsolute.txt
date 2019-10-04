@@ -1,0 +1,2 @@
+D:\React-Projects\CreudUsingReact\CreudUsingReact\obj\Debug\CreudUsingReact.csprojAssemblyReference.cache
+D:\React-Projects\CreudUsingReact\CreudUsingReact\obj\Debug\CreudUsingReact.csproj.CoreCompileInputs.cache
